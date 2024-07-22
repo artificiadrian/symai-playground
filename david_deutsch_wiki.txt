@@ -1,0 +1,207 @@
+
+Main menu
+
+Wikipedia The Free Encyclopedia
+
+    Create account
+    Log in
+
+Personal tools
+
+Contents
+(Top)
+Early life and education
+
+Career and research
+
+        The Fabric of Reality
+        Invariants
+        The Beginning of Infinity
+        Awards and honours
+    Personal life
+    See also
+    References
+    External links
+
+David Deutsch
+
+    Article
+    Talk
+
+    Read
+    Edit
+    View history
+
+Tools
+
+Appearance
+Text
+
+    Small
+    Standard
+    Large
+
+Width
+
+    Standard
+    Wide
+
+From Wikipedia, the free encyclopedia
+For the American advertising executive, see David Deutsch (ad executive).
+
+This article relies excessively on references to primary sources. Please improve this article by adding secondary or tertiary sources.
+Find sources: "David Deutsch" – news · newspapers · books · scholar · JSTOR (June 2024) (Learn how and when to remove this message)
+David Deutsch
+FRS
+Born	David Elieser Deutsch
+
+18 May 1953 (age 71)[3]
+Haifa, Israel
+Education	William Ellis School
+Alma mater	Clare College, Cambridge (BA)
+Wolfson College, Oxford (DPhil)
+Known for
+
+    Quantum Turing machine
+    Church–Turing–Deutsch principle
+    Deutsch–Jozsa algorithm
+    Quantum logic gate
+    Quantum error correction
+    Constructor theory
+    Deutsch-Wallace approach
+    D-CTC condition
+
+Awards
+
+    IOP Dirac Prize (1998)
+    ICTP Dirac Medal (2017)
+    Breakthrough Prize in Fundamental Physics (2023)
+
+Scientific career
+Fields	Theoretical physics
+Quantum information science
+Institutions	University of Oxford
+Clarendon Laboratory
+Thesis	Boundary effects in quantum field theory (1978)
+Doctoral advisor
+
+    Dennis Sciama[1]
+    Philip Candelas[2]
+
+Doctoral students	Artur Ekert[1]
+Website	www.daviddeutsch.org.uk Edit this at Wikidata
+
+David Elieser Deutsch FRS[4] (/dɔɪtʃ/ DOYTCH; born 18 May 1953)[3] is a British physicist at the University of Oxford. He is a visiting professor in the Department of Atomic and Laser Physics at the Centre for Quantum Computation (CQC) in the Clarendon Laboratory of the University of Oxford. He pioneered the field of quantum computation by formulating a description for a quantum Turing machine, as well as specifying an algorithm designed to run on a quantum computer.[5] He is a proponent of the many-worlds interpretation of quantum mechanics.[6]
+Early life and education
+
+Deutsch was born to a Jewish family in Haifa, Israel on 18 May 1953, the son of Oskar and Tikva Deutsch. In London, David attended Geneva House school in Cricklewood (his parents owned and ran the Alma restaurant on Cricklewood Broadway), followed by William Ellis School in Highgate before reading Natural Sciences at Clare College, Cambridge and taking Part III of the Mathematical Tripos. He went on to Wolfson College, Oxford for his doctorate in theoretical physics,[2] about quantum field theory in curved space-time,[7] supervised by Dennis Sciama[1] and Philip Candelas.[2]
+Career and research
+
+His work on quantum algorithms began with a 1985 paper, later expanded in 1992 along with Richard Jozsa, to produce the Deutsch–Jozsa algorithm, one of the first examples of a quantum algorithm that is exponentially faster than any possible deterministic classical algorithm.[5] In his nomination for election as a Fellow of the Royal Society (FRS) in 2008, his contributions were described as:[4]
+
+    [having] laid the foundations of the quantum theory of computation, and has subsequently made or participated in many of the most important advances in the field, including the discovery of the first quantum algorithms, the theory of quantum logic gates and quantum computational networks, the first quantum error-correction scheme, and several fundamental quantum universality results. He has set the agenda for worldwide research efforts in this new, interdisciplinary field, made progress in understanding its philosophical implications (via a variant of the many-universes interpretation) and made it comprehensible to the general public, notably in his book The Fabric of Reality.
+
+Since 2012,[8] he has been working on constructor theory, an attempt at generalizing the quantum theory of computation to cover not just computation but all physical processes.[9][10] Together with Chiara Marletto, he published a paper in December 2014 entitled Constructor theory of information, that conjectures that information can be expressed solely in terms of which transformations of physical systems are possible and which are impossible.[11][12]
+The Fabric of Reality
+Main article: The Fabric of Reality
+
+In his 1997 book The Fabric of Reality, Deutsch details his "Theory of Everything". It aims not at the reduction of everything to particle physics, but rather mutual support among multiversal, computational, epistemological, and evolutionary principles. His theory of everything is somewhat emergentist rather than reductive. There are four strands to his theory:
+
+    Hugh Everett's many-worlds interpretation of quantum physics, "the first and most important of the four strands."
+    Karl Popper's epistemology, especially its anti-inductivism and requiring a realist (non-instrumental) interpretation of scientific theories, as well as its emphasis on taking seriously those bold conjectures that resist falsification.
+    Alan Turing's theory of computation, especially as developed in Deutsch's Turing principle, in which the Universal Turing machine is replaced by Deutsch's universal quantum computer. ("The theory of computation is now the quantum theory of computation.")
+    Richard Dawkins' refinement of Darwinian evolutionary theory and the modern evolutionary synthesis, especially the ideas of replicator and meme as they integrate with Popperian problem-solving (the epistemological strand).
+
+Invariants
+
+In a 2009 TED talk, Deutsch expounded a criterion for scientific explanation, which is to formulate invariants: "State an explanation [publicly, so that it can be dated and verified by others later] that remains invariant [in the face of apparent change, new information, or unexpected conditions]".[13]
+
+    "A bad explanation is easy to vary."[13]: minute 11:22 
+    "The search for hard-to-vary explanations is the origin of all progress"[13]: minute 15:05 
+    "That the truth consists of hard-to-vary assertions about reality is the most important fact about the physical world."[13]: minute 16:15 
+
+Invariance as a fundamental aspect of a scientific account of reality has long been part of philosophy of science: for example, Friedel Weinert's book The Scientist as Philosopher (2004) noted the presence of the theme in many writings from around 1900 onward, such as works by Henri Poincaré (1902), Ernst Cassirer (1920), Max Born (1949 and 1953), Paul Dirac (1958), Olivier Costa de Beauregard (1966), Eugene Wigner (1967), Lawrence Sklar (1974), Michael Friedman (1983), John D. Norton (1992), Nicholas Maxwell (1993), Alan Cook (1994), Alistair Cameron Crombie (1994), Margaret Morrison (1995), Richard Feynman (1997), Robert Nozick (2001), and Tim Maudlin (2002).[14]
+The Beginning of Infinity
+Main article: The Beginning of Infinity
+
+Deutsch's second book, The Beginning of Infinity: Explanations that Transform the World, was published on 31 March 2011. In this book, he views the European Enlightenment of the 17th and 18th centuries as near the beginning of a potentially unending sequence of purposeful knowledge creation. He examines the nature of knowledge, memes, and how and why creativity evolved in humans[15].
+Awards and honours
+
+The Fabric of Reality was shortlisted for the Rhone-Poulenc science book award in 1998. Deutsch was awarded the Dirac Prize of the Institute of Physics in 1998,[16] and the Edge of Computation Science Prize in 2005.[17] In 2017, he received the Dirac Medal of the International Centre for Theoretical Physics (ICTP).[18] Deutsch is linked to Paul Dirac through his doctoral advisor Dennis Sciama, whose doctoral advisor was Dirac. Deutsch was elected a Fellow of the Royal Society (FRS) in 2008.[4] In 2018, he received the Micius Quantum Prize. In 2021, he was awarded the Isaac Newton Medal and Prize.[19] On September 22, 2022, he was awarded the Breakthrough Prize in Fundamental Physics, sharing it with 3 others.[20]
+Personal life
+
+Deutsch is a founding member of the parenting and educational method Taking Children Seriously.[21]
+
+Deutsch supported Brexit, with his advocacy quoted by the then government adviser, Dominic Cummings.[22] Although Cummings quoted Deutsch in relation to his campaign for Brexit,[23] Deutsch claimed that he "had absolutely no effect on the campaign".[24]: 00:28  Regarding his mention by Michael Gove during a BBC Brexit debate, he said "No-one was more surprised than I."[24]: 00:10  Regarding the debate, he also said:
+
+    "In Britain there is a clear path if you have a grievance, you can join a pressure-group, the pressure-group will pressure the government, or you can see your MP, and the MP will see the grievance building up, and so-on. Whereas, Europe is structured in such a way that it's very difficult to know whom to address your grievance to, or what they could do about it."
+
+See also
+
+    Deutsch gate
+    Wigner's friend
+    Quantum cellular automaton
+    Quantum mechanics of time travel
+
+References
+
+David Deutsch at the Mathematics Genealogy Project
+Deutsch, David; Candelas, Philip (1979). "Boundary effects in quantum field theory". Physical Review D. 20 (12): 3063–3080. Bibcode:1979PhRvD..20.3063D. doi:10.1103/physrevd.20.3063.
+"Deutsch, Prof. David Elieser". Who's Who. Vol. 2014 (April 2014 online ed.). A & C Black. Retrieved 26 July 2014. (Subscription or UK public library membership required.)
+"Professor David Deutsch FRS". royalsociety.org. London: Royal Society. 2008. Archived from the original on 16 November 2015. Retrieved 14 November 2017. One or more of the preceding sentences incorporates text from the royalsociety.org website where:
+
+    "All text published under the heading 'Biography' on Fellow profile pages is available under Creative Commons Attribution 4.0 International License.” –"Royal Society Terms, conditions and policies". Archived from the original on 11 November 2016. Retrieved 9 March 2016.
+
+Deutsch, David (1985). "Quantum theory, the Church-Turing principle and the universal quantum computer". Proceedings of the Royal Society A. 400 (1818): 97–117. Bibcode:1985RSPSA.400...97D. CiteSeerX 10.1.1.41.2382. doi:10.1098/rspa.1985.0070. S2CID 1438116.
+David Deutsch publications indexed by the Scopus bibliographic database. (subscription required)
+Peach, Filiz (2000). "David Deutsch". Philosophy Now. Interview. Archived from the original on 2 April 2012. Retrieved 7 December 2016.
+Merali, Zeeya (26 May 2014). "A Meta-Law to Rule Them All: Physicists Devise a "Theory of Everything"". Scientific American. Nature Publishing Group. Archived from the original on 28 May 2014. Retrieved 11 January 2016.
+Heaven, Douglas (6 November 2012). "Theory of everything says universe is a transformer". New Scientist. Archived from the original on 9 November 2012. Retrieved 11 January 2016.
+"Constructor Theory: A Conversation with David Deutsch". edge.org. Edge Foundation, Inc. 22 October 2012. Archived from the original on 21 October 2012. Retrieved 17 February 2013.
+Deutsch, D.; Marletto, C. (2014). "Constructor theory of information". Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences. 471 (2174): 20140540. arXiv:1405.5563. Bibcode:2014RSPSA.47140540D. doi:10.1098/rspa.2014.0540. ISSN 1364-5021. PMC 4309123. PMID 25663803.
+Deutsch, David; Marletto, Chiara (21 May 2014). "Why we need to reconstruct the universe". New Scientist. No. 2970. pp. 30–31. Archived from the original on 18 December 2022. Retrieved 4 June 2023.
+Deutsch, David (October 2009). A new way to explain explanation. TED talk. Archived from the original on 4 November 2018. Retrieved 16 September 2018. Also available from YouTube Archived 8 November 2022 at the Wayback Machine.
+Weinert, Friedel (2004). "Invariance and reality". The Scientist as Philosopher: Philosophical Consequences of Great Scientific Discoveries. Berlin; New York: Springer-Verlag. pp. 62–74 (72). doi:10.1007/b138529. ISBN 3540205802. OCLC 53434974.
+Deutsch David, The Beginning of Infinity, page 369-398
+Deutsch, David (2016). "About Me". daviddeutsch.org.uk. Archived from the original on 11 March 2019. Retrieved 7 December 2016.
+"Edge of Computation Science Prize". Archived from the original on 9 December 2006.
+"Dirac Medal of ICTP 2017". ictp.it. Archived from the original on 5 March 2021. Retrieved 8 August 2017.
+"Quantum physicist David Deutsch bags Isaac Newton Medal and Prize". 30 November 2021. Archived from the original on 2 December 2021. Retrieved 27 January 2022.
+Sample, Ian (22 September 2022). "'Father of quantum computing' wins $3m physics prize". The Guardian. Archived from the original on 22 September 2022. Retrieved 23 September 2022.
+Friedman, Dawn (2003). "Taking Children Seriously: A new child-rearing movement believes parents should never coerce their kids". Utne Reader. Ogden Publications, Inc. Archived from the original on 30 April 2014. Retrieved 7 December 2016.
+Knight, Sam (31 January 2020). "What Will Brexit Britain Be Like?". The New Yorker. Archived from the original on 1 February 2020. Retrieved 19 October 2022.
+Cummings, Dominic (28 April 2023). "Q&A". Dominic Cummings substack. Retrieved 24 May 2024.
+
+    Joe Boswell (4 December 2019). David Deutsch on Brexit and Error Correction. Retrieved 24 May 2024 – via YouTube.
+
+External links
+Wikiquote has quotations related to David Deutsch.
+
+    Official website Edit this at Wikidata
+    David Deutsch at TED Edit this at Wikidata
+     This article incorporates text available under the CC BY 4.0 license.
+
+    vte
+
+Fellows of the Royal Society elected in 2008
+Authority control databases Edit this at Wikidata
+Categories:
+
+    Scientists from HaifaIsraeli physicistsIsraeli writersIsraeli computer scientistsQuantum computingBritish theoretical physicistsBritish atheists1953 birthsJewish Israeli atheistsIsraeli atheistsJewish physicistsLiving peopleFellows of the British Computer SocietyFellows of the Royal SocietyPeople educated at William Ellis SchoolAlumni of Clare College, CambridgeAlumni of Wolfson College, OxfordAcademics of the University of OxfordBritish quantum physicistsQuantum information scientistsIsraeli Ashkenazi JewsJewish British scientists
+
+    This page was last edited on 13 July 2024, at 23:33 (UTC).
+    Text is available under the Creative Commons Attribution-ShareAlike License 4.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+    Privacy policy
+    About Wikipedia
+    Disclaimers
+    Contact Wikipedia
+    Code of Conduct
+    Developers
+    Statistics
+    Cookie statement
+    Mobile view
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+
