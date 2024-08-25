@@ -1,15 +1,22 @@
 from enum import StrEnum
+from typing import Optional
 
-from pydantic import create_model, Field
+from pydantic import Field, create_model, BaseModel
 
-from graphs.models import GraphDefinition, Property, ValueType, EnumProperty, ScalarProperty, \
-    ListProperty
+from graphs.models import (
+    EnumProperty,
+    GraphDefinition,
+    ListProperty,
+    Property,
+    ScalarProperty,
+    ValueType, EdgeDefinition,
+)
 
-_value_type_to_python_type = {
+_value_type_to_python_type: dict[ValueType, type] = {
     ValueType.STRING: str,
     ValueType.FLOAT: float,
     ValueType.INT: int,
-    ValueType.BOOLEAN: bool
+    ValueType.BOOLEAN: bool,
 }
 
 
@@ -24,28 +31,60 @@ def _create_property_field(prop: Property):
         py_type = list[_value_type_to_python_type[prop.element_type]]
     elif isinstance(prop, EnumProperty):
         py_type = _create_str_enum(prop)
-    else:
-        raise ValueError(f"Unknown property type {prop.type}")
 
     if prop.optional:
-        py_type = py_type | None
+        py_type = Optional[py_type]
 
     return py_type, Field(description=prop.description)
 
 
 def _create_property_fields(properties: list[Property]):
-    return {p.name: _create_property_field(p) for p in properties}
+    props = {p.name: _create_property_field(p) for p in properties}
+    props["id"] = (str, Field(description="Unique identifier of the node (camel Case)"))
+    return props
 
 
-def _create_type(definition):
-    return create_model(definition.name, id=(str, Field(description="A unique identifier for the object (camel Case)")),
-                        **_create_property_fields(definition.properties),
-                        __module__="custom_graph")
+def _create_type(definition, base: type[BaseModel], **props):
+    return create_model(
+        definition.name,
+        __base__=base,
+        __module__="custom_graph",
+        **_create_property_fields(definition.properties),
+        **props,
+    )
+
+
+def _create_edge_type(edge: EdgeDefinition, base: type[BaseModel]):
+    return _create_type(edge, base,
+                        a=(str, Field(
+                            description=f"Unique identifier of the {edge.a} node at one end of the edge (camel Case)")),
+                        b=(str, Field(
+                            description=f"Unique identifier of the {edge.b} node at the other end of the edge (camel "
+                                        f"Case)")),
+                        )
+
+
+def _types_to_list_fields(types: list[type[BaseModel]]):
+    return {t.__name__: (list[t], Field(default_factory=lambda: [])) for t in types}
 
 
 def create_pydantic_types(graph: GraphDefinition):
-    node_types = [_create_type(node) for node in graph.nodes]
-    edge_types = [_create_type(edge) for edge in graph.edges]
+    # todo allow custom module!
+    node_base_type = create_model("Node", __module__="custom_graph")
+    edge_base_type = create_model("Edge", __module__="custom_graph")
 
-    return create_model("Graph", nodes=(node_types, Field(description="Nodes")),
-                        edges=(edge_types, Field(description="Edges")))
+    node_types = [_create_type(node, node_base_type) for node in graph.nodes]
+    edge_types = [_create_edge_type(edge, edge_base_type) for edge in graph.edges]
+
+    graph_types_type = create_model(
+        "GraphTypes",
+        node_types=(list[type[node_base_type]], Field(description="Nodes")),
+        edge_types=(list[type[edge_base_type]], Field(description="Edges")),
+    )
+
+    graph_type = create_model(
+        "Graph",
+        **_types_to_list_fields(node_types + edge_types)
+    )
+
+    return graph_types_type(node_types=node_types, edge_types=edge_types), graph_type()
