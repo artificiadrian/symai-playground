@@ -1,3 +1,4 @@
+import re
 from enum import StrEnum
 from typing import Optional
 
@@ -18,6 +19,8 @@ _value_type_to_python_type: dict[ValueType, type] = {
     ValueType.INT: int,
     ValueType.BOOLEAN: bool,
 }
+
+_pascal_to_snake_case_pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
 
 def _create_str_enum(prop: EnumProperty):
@@ -65,7 +68,8 @@ def _create_edge_type(edge: EdgeDefinition, base: type[BaseModel]):
 
 
 def _types_to_list_fields(types: list[type[BaseModel]]):
-    return {t.__name__: (list[t], Field(default_factory=lambda: [])) for t in types}
+    return {_pascal_to_snake_case_pattern.sub('_', t.__name__).lower(): (list[t], Field(default_factory=lambda: [])) for
+            t in types}
 
 
 def create_pydantic_types(graph: GraphDefinition):
@@ -78,8 +82,8 @@ def create_pydantic_types(graph: GraphDefinition):
 
     graph_types_type = create_model(
         "GraphTypes",
-        node_types=(list[type[node_base_type]], Field(description="Nodes")),
-        edge_types=(list[type[edge_base_type]], Field(description="Edges")),
+        node_types=(dict[str, type[node_base_type]], Field(description="Nodes")),
+        edge_types=(dict[str, type[edge_base_type]], Field(description="Edges")),
     )
 
     graph_type = create_model(
@@ -87,4 +91,5 @@ def create_pydantic_types(graph: GraphDefinition):
         **_types_to_list_fields(node_types + edge_types)
     )
 
-    return graph_types_type(node_types=node_types, edge_types=edge_types), graph_type()
+    return graph_types_type(node_types={t.__name__: t for t in node_types},
+                            edge_types={e.__name__: e for e in edge_types}), graph_type()
