@@ -4,7 +4,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
-class _Model(BaseModel):
+class StrictModel(BaseModel):
     model_config = ConfigDict(extra="forbid")  # required by OpenAI API
 
 
@@ -18,7 +18,7 @@ class ValueType(StrEnum):
 # duplicate code in properties is for now (unfortunately) intentional as a common base class resulted in OpenAI API 
 # errors regarding anyOf implementation and ordering of variables
 
-class _Property(_Model):
+class _Property(StrictModel):
     type: Literal["scalar", "list", "enum"]
     name: str = Field(description="Name that uniquely identifies the property (camel Case)")
     description: str
@@ -46,13 +46,13 @@ class ListProperty(_Property):
 Property = ScalarProperty | ListProperty | EnumProperty
 
 
-class NodeDefinition(_Model):
+class NodeDefinition(StrictModel):
     name: str = Field(description="Name that uniquely identifies the node type (Pascal case)")
     description: str
     properties: list[Property]
 
 
-class EdgeDefinition(_Model):
+class EdgeDefinition(StrictModel):
     name: str = Field(description="Name that uniquely identifies the edge type (Pascal case)")
     description: str
     properties: list[Property]
@@ -72,7 +72,7 @@ def _ensure_names_are_unique(items: list, error: str):
 
 # TODO validate name lengths
 
-class GraphDefinition(_Model):
+class GraphDefinition(StrictModel):
     nodes: list[NodeDefinition]
     edges: list[EdgeDefinition]
 

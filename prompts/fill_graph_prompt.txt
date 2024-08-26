@@ -1,0 +1,10 @@
+You are given a JSON document representing a graph that adheres to a predefined schema. Based on the input text and the provided extra information, your task is to:
+
+    1. Identify relevant entities and relationships in the text that correspond to the node and edge types defined in the schema.
+    2. Add new nodes and edges to the existing JSON document, ensuring that each new entry conforms to the schema's structure and properties.
+    3. Update the JSON document with any additional properties or relationships that are implied or directly stated in the text.
+
+<extra_info>{extra_info}</extra_info>
+<graph>{graph}</graph>
+
+Please expand the JSON document by adding the appropriate nodes and edges based on the input text. Make sure to adhere to the schema's structure and properties.
