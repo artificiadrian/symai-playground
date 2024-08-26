@@ -26,10 +26,12 @@ def _pascal_to_snake_case(pascal: str):
     return _pascal_to_snake_case_pattern.sub('_', pascal).lower()
 
 
+# TODO use protocols for duck typing for type hints
+
 class Node(StrictModel):
 
     def get_id(self):
-        return self.uid
+        return self.id
 
     def get_display_name(self):
         return self.display_name
@@ -38,7 +40,7 @@ class Node(StrictModel):
 class Edge(StrictModel):
 
     def get_id(self):
-        return self.uid
+        return self.id
 
     def get_display_name(self):
         return self.display_name
@@ -100,7 +102,9 @@ def _create_property_field(prop: Property):
 def _create_property_fields(properties: list[Property]):
     props = {p.name: _create_property_field(p) for p in properties}
     props["id"] = (str, Field(description="Globally unique identifier (camel Case)!"))
-    props["display_name"] = str, Field(...)
+    props["display_name"] = str, Field(...,
+                                       description="Display name. For nodes, this is the name of the node. For edges, "
+                                                   "describe what the edge is about, but do not mention the nodes.")
     return props
 
 

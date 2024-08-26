@@ -11,8 +11,7 @@ from pyvis.network import Network
 g = CreateGraph()
 
 sym = g(Symbol(
-    "I want to build an ontology for a fiction story. Characters as nodes and relationships as edges. Add properties "
-    "to them. No other node or edge types."))
+    "I want to create a relationship graph of World War II. participants. Countries, organizations, and individuals and their relationships."))
 graph_type: type[BaseGraph] = sym.value
 
 graph = graph_type()
@@ -20,7 +19,7 @@ print("Graph:", graph)
 
 print("Schema:", graph.model_json_schema())
 
-paper_text = Symbol(Path("examples/romeo_and_juliet.txt").read_text(encoding="utf-8"))
+paper_text = Symbol(Path("examples/wikipedia_ww2.txt").read_text(encoding="utf-8"))
 
 fg = FillGraph(graph)
 print("Filling...\n")
@@ -34,10 +33,10 @@ with open("examples/graph.json", "w") as f:
 
 G = nx.Graph()
 for node in graph.get_nodes():
-    G.add_node(node.uid, label=node.get_display_name())
+    G.add_node(node.get_id(), label=node.get_display_name())
 
 for edge in graph.get_edges():
-    G.add_edge(edge.a, edge.b, label=edge.get_display_name())
+    G.add_edge(edge.node_a, edge.node_b, label=edge.get_display_name())
 
 network = Network()
 network.from_nx(G)

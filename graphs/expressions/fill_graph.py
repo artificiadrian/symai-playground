@@ -35,7 +35,7 @@ class FixGraph(Function):
         print("Fixing graph")
         error = self._initial_error
         for i in range(self._max_retries):
-            print(f"[{i + 1}/{self._max_retries}] Trying to fix graph")
+            print(f"[{i + 1}/{self._max_retries}] Trying to fix graph because of", error.json())
             self.adapt(_format_error(error))
             x = super().forward(*args, **kwargs)
             try:
