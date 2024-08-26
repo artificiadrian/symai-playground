@@ -2,5 +2,5 @@
 .idea/
 __pycache__/
 examples/**
-
+lib/
 .env
