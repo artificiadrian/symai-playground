@@ -11,7 +11,7 @@ from pyvis.network import Network
 g = CreateGraph()
 
 sym = g(Symbol(
-    "I want to create a relationship graph of World War II. participants. Countries, organizations, and individuals and their relationships."))
+    "I want to create a graph that captures as much information as possible from this world war II wikipedia article. Make sure to add lots of edges to connect the nodes"))
 graph_type: type[BaseGraph] = sym.value
 
 graph = graph_type()
@@ -21,12 +21,12 @@ print("Schema:", graph.model_json_schema())
 
 paper_text = Symbol(Path("examples/wikipedia_ww2.txt").read_text(encoding="utf-8"))
 
-fg = FillGraph(graph)
-print("Filling...\n")
-
-sym = fg(paper_text)
-graph = sym.value
-print(sym, graph)
+for i in range(2):
+    print("filling step",i)
+    fg = FillGraph(graph)
+    sym = fg(paper_text)
+    graph = sym.value
+    print(sym, graph)
 
 with open("examples/graph.json", "w") as f:
     f.write(graph.model_dump_json(indent=4))

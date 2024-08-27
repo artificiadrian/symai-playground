@@ -13,6 +13,7 @@ _fix_prompt = Path("prompts/fix_graph_prompt.txt").read_text()
 def _format_error(error: ValidationError):
     return f"<error>{error.json()}</error>"
 
+# TODO include information on how to fix our custom errors s.t. the model has it easier!
 
 class FixGraph(Function):
     def __init__(self, graph: BaseGraph, error: ValidationError, extra_info: str = "",

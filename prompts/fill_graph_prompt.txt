@@ -7,4 +7,4 @@ You are given a JSON document representing a graph that adheres to a predefined 
 <extra_info>{extra_info}</extra_info>
 <graph>{graph}</graph>
 
-Please expand the JSON document by adding the appropriate nodes and edges based on the input text. Make sure to adhere to the schema's structure and properties.
+Please expand the JSON document by adding the appropriate nodes and edges based on the input text. Make sure to adhere to the schema's structure and properties. Finally, it is of utmost importance that you only include information THAT IS DIRECTLY OR INDIRECTLY MENTIONED IN THE TEXT!!!
