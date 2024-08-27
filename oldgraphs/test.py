@@ -2,9 +2,9 @@ from pathlib import Path
 
 from symai import Symbol
 
-from graphs.create_types import BaseGraph
-from graphs.expressions.create_graph import CreateGraph
-from graphs.expressions.fill_graph import FillGraph
+from oldgraphs.create_types import BaseGraph
+from oldgraphs.expressions.create_graph import CreateGraph
+from oldgraphs.expressions.fill_graph import FillGraph
 import networkx as nx
 from pyvis.network import Network
 

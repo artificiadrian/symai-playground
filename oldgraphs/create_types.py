@@ -3,7 +3,7 @@ from typing import Optional, cast, Literal
 
 from pydantic import Field, create_model, BaseModel, model_validator
 
-from graphs.models import (
+from oldgraphs.models import (
     EnumProperty,
     GraphDefinition,
     ListProperty,

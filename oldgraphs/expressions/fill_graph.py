@@ -4,16 +4,17 @@ from pydantic import ValidationError
 from symai import Symbol
 from symai.components import Function
 
-from graphs.create_types import BaseGraph
+from oldgraphs.create_types import BaseGraph
 
 _fill_prompt = Path("prompts/fill_graph_prompt.txt").read_text()
 _fix_prompt = Path("prompts/fix_graph_prompt.txt").read_text()
 
 
+# TODO include information on how to fix our custom errors s.t. the model has it easier!
+
 def _format_error(error: ValidationError):
     return f"<error>{error.json()}</error>"
 
-# TODO include information on how to fix our custom errors s.t. the model has it easier!
 
 class FixGraph(Function):
     def __init__(self, graph: BaseGraph, error: ValidationError, extra_info: str = "",

@@ -3,8 +3,8 @@ from pathlib import Path
 from symai import Symbol
 from symai.components import Function
 
-from graphs.create_types import create_graph_type
-from graphs.models import GraphDefinition
+from oldgraphs.create_types import create_graph_type
+from oldgraphs.models import GraphDefinition
 
 _create_prompt = Path("prompts/create_graph_prompt.txt").read_text()
 
