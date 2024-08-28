@@ -9,15 +9,9 @@ from oldgraphs.models import (
     ListProperty,
     Property,
     ScalarProperty,
-    ValueType, EdgeDefinition, NodeDefinition, StrictModel,
+    EdgeDefinition, NodeDefinition, StrictModel,
 )
 
-_value_type_to_python_type: dict[ValueType, type] = {
-    ValueType.STRING: str,
-    ValueType.FLOAT: float,
-    ValueType.INT: int,
-    ValueType.BOOLEAN: bool,
-}
 
 _pascal_to_snake_case_pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
@@ -80,7 +74,7 @@ class BaseGraph(StrictModel):
 
 def _create_enum_as_literal_union(prop: EnumProperty):
     """Dynamically create a union of Literal types for an enum property"""
-    return Literal[tuple(prop.values)]
+    return Literal[*prop.values]
 
 
 def _create_property_field(prop: Property):
