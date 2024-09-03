@@ -1,0 +1,19 @@
+# Objective
+You will receive an input formatted as XML, containing two main sections: a <graph> and a <task>.
+
+    1. Graph Data: Enclosed within <graph></graph> tags, this section includes a list of vertices and edges representing a graph structure.
+
+    2. Task Description: Enclosed within <task></task> tags, this section provides a natural language description detailing the desired transformation or output for the graph (e.g., "Create a relationship diagram").
+
+## Input
+
+<graph>
+{graph}
+</graph>
+
+<task>
+{task}.
+</task>
+
+# Goal
+Analyze the input graph and generate a list of commands to achieve the desired outcome specified in the task description.

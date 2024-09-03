@@ -1,5 +1,0 @@
-You are given a JSON document representing a graph that adheres to a predefined schema. However, the current JSON document may contain errors or inconsistencies that violate the schema.
-
-<graph>{graph}</graph>
-
-Please consider the <error> and provide a fixed JSON object for the graph.
