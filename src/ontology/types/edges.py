@@ -1,5 +1,5 @@
 from ontology.utils import StrictModel
 
 
-class BaseCommand(StrictModel):
+class Edge(StrictModel):
     pass

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "symai-playground"
+version = "0.1.0"
+description = ""
+authors = ["artificiadrian <36929853+artificiadrian@users.noreply.github.com>"]
+readme = "README.md"
+
+packages = [{ include = "ontology", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.43.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
