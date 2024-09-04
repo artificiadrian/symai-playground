@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "symai-playground"
 version = "0.1.0"
-description = ""
+description = "A playground for experiments in collaboration with [ExtensityAI](https://github.com/ExtensityAI/) and their project [SymbolicAI](https://github.com/ExtensityAI/symbolicai)."
 authors = ["artificiadrian <36929853+artificiadrian@users.noreply.github.com>"]
 readme = "README.md"
 
