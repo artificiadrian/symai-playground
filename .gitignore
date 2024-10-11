@@ -1,7 +1,8 @@
 .venv/
 .idea/
 __pycache__/
-examples/**
+examples/
 lib/
 .env
 .vscode/
+*.egg-info/

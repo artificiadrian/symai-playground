@@ -1,17 +1,17 @@
-[tool.poetry]
-name = "symai-playground"
+[project]
+name = "extensity-playground"
 version = "0.1.0"
-description = "A playground for experiments in collaboration with [ExtensityAI](https://github.com/ExtensityAI/) and their project [SymbolicAI](https://github.com/ExtensityAI/symbolicai)."
-authors = ["artificiadrian <36929853+artificiadrian@users.noreply.github.com>"]
+description = "A playground for experiments in collaboration with [ExtensityAI](https://github.com/ExtensityAI/) utilizing their project [SymbolicAI](https://github.com/ExtensityAI/symbolicai)."
+authors = [{ name = "artificiadrian", email = "36929853+artificiadrian@users.noreply.github.com"}]
 readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.51.0",
+    "networkx>=3.3",
+    "pyvis>=0.3.2",
+    "tiktoken>=0.7.0",
+    "pydantic>=2.9.2",
+]
 
-packages = [{ include = "ontology", from = "src" }]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-openai = "^1.43.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+cache-dir = "D:/.uv/cache"
