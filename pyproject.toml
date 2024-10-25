@@ -2,7 +2,7 @@
 name = "extensity-playground"
 version = "0.1.0"
 description = "A playground for experiments in collaboration with [ExtensityAI](https://github.com/ExtensityAI/) utilizing their project [SymbolicAI](https://github.com/ExtensityAI/symbolicai)."
-authors = [{ name = "artificiadrian", email = "36929853+artificiadrian@users.noreply.github.com"}]
+authors = [{ name = "artificiadrian", email = "adrian@artificiadrian.com" }]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
